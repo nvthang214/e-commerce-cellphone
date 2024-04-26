@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header bg-primary text-white">
+      <div class="container">
+        <div class="header__top navbar">
+          <!-- logo -->
+          <a
+            href="index.html"
+            class="header__top-logo navbar-brand fs-1 fw-bold fst-italic text-white"
+          >
+            Phone Universe
+          </a>
+          <!-- search -->
+          <div class="header__top-search w-50 text-center">
+            <i class="fa-solid fa-magnifying-glass fs-5"></i>
+            <input
+              type="text"
+              class="w-75 rounded border-0 fs-5"
+              placeholder="Bạn cần tìm gì"
+            />
+          </div>
+          <!-- card -->
+          <div class="header__top-card">
+            <a href="" class="btn fs-2 rounded-pill position-relative"
+              ><i class="fa-solid fa-cart-shopping text-white"
+                ><span
+                  class="position-absolute fs-5 sticky-top text-black-50"
+                  id="amount"
+                  >0</span
+                >
+              </i></a
+            >
+          </div>
+          <!-- user -->
+          <div class="header__top-account">
+            <a href="" class="btn fs-2 rounded-pill"
+              ><i class="fa-solid fa-user text-white"></i
+            ></a>
+          </div>
+        </div>
+        <!-- menu -->
+        <div class="header__menu">
+          <ul class="menu-lists navbar list-unstyled">
+            <li class="menu-item">
+              <a href="./js/phone.html" class="btn text-white">Phone</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Laptop</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">PC</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Tablet</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Sound</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Watch</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Houseware</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">TV</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Accessory</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">PC Components</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="btn text-white">Secondhand</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Banner -->
+      <div class="banner row">
+        <!-- left -->
+        <div class="banner__left col-3">
+          <a href="">
+            <img
+              src="./image/banner/vnpay.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="./image/banner/theTinDung.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+            />
+          </a>
+          <a href=""
+            ><img
+              src="./image/banner/momo.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+          /></a>
+        </div>
+        <!-- slider -->
+        <div class="banner__slide col-6 rounded-3">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide h-100 rounded-3"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner h-100 rounded-3">
+              <div
+                class="carousel-item active h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/iphone-15-17390-sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/redme-note-13-sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/690x300.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href="">
+                  <img
+                    src="./image/banner/slide/Asus_sliding.2.webp"
+                    class="d-block w-100 h-100 -3 p-1"
+                    alt="..."
+                  />
+                </a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/huawei-band-9-sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/loa-bluetooth-alpha-works-aw-w38.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/MSI_sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/oppo-find-x5-pro-silding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/robot-hut-bui-roborock-s8-max-ultra-slide-11-04-24.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/samsung-galaxy-m34-5g-home-page.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/sony-xperia-10-sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/tai-nghe-sennheiser-momentum-true-wireless-4.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+              <div
+                class="carousel-item h-100 rounded-3"
+                data-bs-interval="3000"
+              >
+                <a href=""
+                  ><img
+                    src="./image/banner/slide/thu-cu-dong-ho-sliding.webp"
+                    class="d-block w-100 h-100 rounded-3 p-1"
+                    alt="..."
+                /></a>
+              </div>
+            </div>
+            <!-- move slide button -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="banner__right col-3">
+          <a href=""
+            ><img
+              src="./image/banner/galaxy.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="./image/banner/ipad.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="./image/banner/uuDaiSinhvien.webp"
+              class="w-100 m-1 rounded"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- Phone -->
+      <div class="phone">
+        <!-- header -->
+        <div class="phone__header navbar">
+          <h2 class="phone__header-title header-title fs-1 fw-bold">
+            Điện Thoại
+          </h2>
+          <div class="phone_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Apple</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Samsung</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Oppo</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Xiaomi</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop -->
+      <div class="laptop">
+        <!-- header -->
+        <div class="laptop__header navbar">
+          <h2 class="laptop__header-title header-title fs-1 fw-bold">Laptop</h2>
+          <div class="laptop_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Asus</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">MSI</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Lenovo</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Dell</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PC -->
+      <div class="pc">
+        <!-- header -->
+        <div class="pc__header navbar">
+          <h2 class="pc__header-title header-title fs-1 fw-bold">
+            Màn Hình, PC
+          </h2>
+          <div class="pc_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Màn Hình</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >PC đồ họa</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >PC gaming</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">PC IT</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tablet -->
+      <div class="tablet">
+        <!-- header -->
+        <div class="tablet__header navbar">
+          <h2 class="tablet__header-title header-title fs-1 fw-bold">
+            Máy Tính Bảng
+          </h2>
+          <div class="tablet_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Ipad</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Samsung</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Tab</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">TCL</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sound -->
+      <div class="sound">
+        <!-- header -->
+        <div class="sound__header navbar">
+          <h2 class="sound__header-title header-title fs-1 fw-bold">
+            Âm Thanh
+          </h2>
+          <div class="sound_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Tai nghe Bluetooth</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Tai nghe gaming</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Loa Bluetooth</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Loa karaoke</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+      <!-- Smart Watch -->
+      <div class="watch">
+        <!-- header -->
+        <div class="watch__header navbar">
+          <h2 class="watch__header-title header-title fs-1 fw-bold">
+            Đồng hồ thông minh
+          </h2>
+          <div class="watch_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Apple Watch</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Samsung</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Huawei</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Xiaomi</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HouseWare -->
+      <div class="houseware">
+        <!-- header -->
+        <div class="houseware__header navbar">
+          <h2 class="houseware__header-title header-title fs-1 fw-bold">
+            Đồ Gia Dụng
+          </h2>
+          <div class="houseware_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Nồi chiên không dầu</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Máy hút bụi</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Nồi cơm điện</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Lò vi sóng</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+      <!-- TV -->
+      <div class="tv">
+        <!-- header -->
+        <div class="tv__header navbar">
+          <h2 class="tv__header-title header-title fs-1 fw-bold">TIVI</h2>
+          <div class="tv_header-brandList header-brandList">
+            <ul class="navbar gap-5 list-unstyled brandList-menu">
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Samsung</a
+                >
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">LG</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">TCL</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill">Xiaomi</a>
+              </li>
+              <li class="brandList-item">
+                <a href="" class="btn btn-primary w-100 rounded-pill"
+                  >Xem tất cả</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="card-lists row">
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+          <!-- card -->
+          <div class="card position-relative">
+            <img
+              src="./image/banner/slide/xiaomi-redmi-note-13_1__1_1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <p class="card-title fw-bold fs-6">
+                iPhone 15 Pro 256 GB|Chính hãng VN/A
+              </p>
+              <p class="card-price text-danger fw-bold fs-5 mt-3 mb-0">
+                19.000.000<span
+                  ><i class="fa-solid fa-dong-sign fs-6"></i> </span
+                ><span
+                  class="fs-6 text-black-50 text-decoration-line-through fw-normal"
+                  >20.000.000<i
+                    class="fa-solid fa-dong-sign fs-6 text-decoration-line-through"
+                  ></i>
+                </span>
+              </p>
+              <p class="card-text mt-2">
+                Không phí chuyển đổi khi trả góp 0% từ 3-6 tháng
+              </p>
+            </div>
+            <div
+              class="card-rate text-primary pb-2 d-flex justify-content-between"
+            >
+              <div class="rate-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rate-like text-danger">
+                Yêu Thích <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p class="position-absolute card-installment">Trả góp 0%</p>
+            <p class="position-absolute card-discount">Giảm 0%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accessory -->
+
+      <!-- Component -->
+
+      <!-- Secondhand -->
+    </div>
+
+    <!-- footer -->
+
+    <script src="./js/index.js"></script>
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

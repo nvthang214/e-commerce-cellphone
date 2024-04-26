@@ -1,0 +1,50 @@
+.menu-lists a {
+  width: 110px;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.brandList-item a:hover {
+  background-color: rgba(13, 110, 253, 0.5);
+}
+.card {
+  width: 19%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px gray;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.card img {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 1px 1px 12px rgb(8, 8, 8);
+  transition: 0.3s;
+}
+
+.card-installment {
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  border-radius: 7px;
+  right: 0;
+}
+.card-discount {
+  width: 80px;
+  text-align: center;
+  color: white;
+  left: 0;
+  border: 2px solid #0d6efd;
+  background-color: #0d6efd;
+  border-radius: 7px 0 10px 0;
+}
+.card-text {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0 5px;
+  border-radius: 8px;
+}
