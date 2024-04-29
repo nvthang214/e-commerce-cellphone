@@ -8,9 +8,10 @@
 .brandList-item a:hover {
   background-color: rgba(13, 110, 253, 0.5);
 }
+.card-lists {
+}
 .card {
   width: 19%;
-  height: 450px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px gray;
   margin: 10px auto;
