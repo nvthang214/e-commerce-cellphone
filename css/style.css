@@ -1,3 +1,38 @@
+.header__top-search {
+  position: relative;
+}
+.header__top-search input {
+  outline: none;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+.header__top-search button {
+  border: none;
+  height: 30px;
+  background-color: transparent;
+  color: grey;
+  position: absolute;
+  right: 81px;
+  width: 50px;
+  border-left: 1px solid #e5e7eb;
+}
+.hotsale {
+  background-color: #0dcaf0;
+  border-radius: 15px;
+  height: 500px;
+  margin-top: 10px;
+}
+.hotsale__default {
+  font-weight: 700;
+  color: white;
+  margin-left: 10px;
+}
+.hotsale__animation {
+  font-weight: 700;
+  margin-left: 10px;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
 .menu-lists a {
   width: 110px;
 }
@@ -10,11 +45,11 @@
 }
 
 .card {
-  width: 19%;
+  /* width: 19%; */
   border-radius: 10px;
   box-shadow: 1px 1px 10px gray;
-  margin: 10px auto;
-  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
 }
 .card img {
   width: 80%;
@@ -31,13 +66,15 @@
   color: #0d6efd;
   border: 2px solid #0d6efd;
   border-radius: 7px;
-  right: 0;
+  right: -1px;
+  top: -1px;
 }
 .card-discount {
-  width: 80px;
+  width: 120px;
   text-align: center;
   color: white;
-  left: 0;
+  left: -1px;
+  top: -1px;
   border: 2px solid #0d6efd;
   background-color: #0d6efd;
   border-radius: 7px 0 10px 0;
@@ -47,4 +84,32 @@
   border: 1px solid #e5e7eb;
   padding: 0 5px;
   border-radius: 8px;
+}
+.rate-like {
+  right: 20px;
+  bottom: 18px;
+}
+
+.list__items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.list__items--item {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #0d6efd;
+}
+.list__items--item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #e5e7eb;
+}
+
+.list__items-img img {
+  width: 100%;
+  position: absolute;
+  top: 30px;
 }
