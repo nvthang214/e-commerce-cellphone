@@ -30,6 +30,12 @@
           >
             Phone Universe
           </a>
+          <!-- product list -->
+          <div class="header_top-list">
+            <button class="btn fs-2 rounded-pill">
+              <span><i class="fa-solid fa-list text-white"></i></span>
+            </button>
+          </div>
           <!-- search -->
           <div class="header__top-search w-50 text-center">
             <form action="">
@@ -40,6 +46,11 @@
               />
               <button><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
             </form>
+          </div>
+          <div class="header__top-contact">
+            <button id="contact-btn" class="btn fs-2 rounded-pill">
+              <i class="fa-solid fa-phone text-white"></i>
+            </button>
           </div>
           <!-- search ship ID -->
           <div class="header__top-ship">
@@ -97,7 +108,18 @@
         </div>
       </div>
     </div>
+    <div id="contact-area" class="contact-area position-absolute">
+      <div class="contact-content">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- body -->
     <div class="container">
       <!-- Banner -->
       <div class="banner row">
@@ -327,14 +349,14 @@
         </div>
       </div>
       <!-- hot sale -->
-      <div class="hotsale">
-        <div class="hotsale__header">
-          <h3 class="fs-1 hotsale__default">
-            <span><i class="fa-solid fa-fire"></i> </span>WEEKEND
-            <span id="textAnimation">HOT SALE</span>
+      <div class="hot__sale">
+        <div class="hot__sale-header">
+          <h3 class="fs-1 hot__sale-default">
+            <span><i class="fa-solid fa-fire"></i> </span>
+            <span id="textAnimation">WEEKEND HOT SALE</span>
           </h3>
         </div>
-        <div class="hotsale__body">
+        <div class="hot__sale-body">
           <section
             class="splide"
             id="hotsale"

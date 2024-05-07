@@ -33,12 +33,19 @@ const textAnimation = document.getElementById("textAnimation");
 let check = true;
 setInterval(() => {
   if (check) {
-    textAnimation.classList.remove("hotsale__default");
-    textAnimation.classList.add("hotsale__animation");
+    textAnimation.classList.remove("hot__sale-default");
+    textAnimation.classList.add("hot__sale-animation");
     check = false;
   } else {
-    textAnimation.classList.remove("hotsale__animation");
-    textAnimation.classList.add("hotsale__default");
+    textAnimation.classList.remove("hot__sale-animation");
+    textAnimation.classList.add("hot__sale-default");
     check = true;
   }
-}, 1000);
+}, 200);
+
+const contactBtn = document.getElementById("contact-btn");
+const contactArea = document.getElementById("contact-area");
+
+contactBtn.addEventListener("click", () => {
+  contactArea.style.display = "block";
+});
