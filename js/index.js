@@ -43,9 +43,22 @@ setInterval(() => {
   }
 }, 200);
 
-const contactBtn = document.getElementById("contact-btn");
-const contactArea = document.getElementById("contact-area");
-
-contactBtn.addEventListener("click", () => {
-  contactArea.style.display = "block";
-});
+function openContact() {
+  const contactArea = document.getElementById("contact-area");
+  contactArea.classList.add("contact-center");
+}
+function closeContact() {
+  const contactArea = document.getElementById("contact-area");
+  contactArea.classList.remove("contact-center");
+}
+function stopPropagation(event) {
+  event.stopPropagation();
+}
+function openMenu() {
+  const menuArea = document.getElementById("menu-area");
+  menuArea.style.display = "block";
+}
+function closeMenu() {
+  const menuArea = document.getElementById("menu-area");
+  menuArea.style.display = "none";
+}

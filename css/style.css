@@ -1,10 +1,65 @@
-.header_top-list button {
-  background-color: transparent;
-  border: none;
+.menu-area {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.menu-content {
+  background-color: #fff;
+  width: 310px;
+  height: 420px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  left: 120px;
+  top: 90px;
 }
 
+.menu-item {
+  position: relative;
+  height: calc(420px / 8);
+  padding: 15px 0;
+}
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  width: 80%;
+  font-weight: 600;
+}
+.menu-item a:hover {
+  color: #0d6efd;
+  transition: all 0.1s;
+}
+.menu-item i {
+  margin-left: 20px;
+  width: 30px;
+}
+.menu-arrow {
+  position: absolute;
+  right: 0;
+}
+
+.menu-sub-area {
+  width: 300px;
+  height: 420px;
+  background-color: #0d6efd;
+  position: absolute;
+  top: 90px;
+  left: 430px;
+  display: none;
+}
+.menu-content ul li:hover > .menu-sub-area {
+  display: block;
+}
 .header__top-search {
   position: relative;
+  width: 40%;
 }
 
 .header__top-search input {
@@ -18,27 +73,59 @@
   background-color: transparent;
   color: grey;
   position: absolute;
-  right: 81px;
+  right: 0;
   width: 50px;
   border-left: 1px solid #e5e7eb;
 }
 .contact-area {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
   z-index: 2;
+  position: fixed;
   top: 0;
   display: none;
 }
+.contact-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-content {
   background-color: #fff;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  display: none;
+  width: 50%;
+  height: fit-content;
+  position: sticky;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 10px;
 }
 .contact-area ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-area ul li {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.contact-area ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+.contact-area button {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  border: none;
+  background-color: transparent;
 }
 .hot__sale {
   background-color: #0dcaf0;
