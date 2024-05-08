@@ -7,24 +7,30 @@
   top: 0;
   display: none;
 }
+
 .menu-content {
+  color: #000;
   background-color: #fff;
   width: 310px;
-  height: 420px;
+  height: 418px;
   position: absolute;
   border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   left: 120px;
   top: 90px;
+  overflow: hidden;
 }
 
 .menu-item {
-  position: relative;
-  height: calc(420px / 8);
+  height: calc(418px / 8);
   padding: 15px 0;
+  border: 0.1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
 }
 .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 .menu-item a {
   text-decoration: none;
@@ -40,22 +46,37 @@
   margin-left: 20px;
   width: 30px;
 }
-.menu-arrow {
-  position: absolute;
-  right: 0;
-}
 
 .menu-sub-area {
-  width: 300px;
-  height: 420px;
-  background-color: #0d6efd;
+  width: 984px;
+  height: 418px;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgb(187, 187, 187);
   position: absolute;
   top: 90px;
-  left: 430px;
+  right: 105px;
+  z-index: 10;
+  border-radius: 5px;
   display: none;
 }
-.menu-content ul li:hover > .menu-sub-area {
-  display: block;
+.menu-sub-area .area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu-sub-area .area ul {
+  padding: 10px;
+  list-style: none;
+}
+.menu-sub-area .area ul li {
+  margin: 10px 0;
+}
+.menu-sub-area .area ul a {
+  text-decoration: none;
+  color: #000;
+}
+.menu-sub-area .area ul a:hover {
+  color: #0d6efd;
 }
 .header__top-search {
   position: relative;
@@ -93,14 +114,14 @@
 }
 .contact-content {
   background-color: #fff;
-  width: 50%;
+  width: 40%;
   height: fit-content;
   position: sticky;
   z-index: 2;
   padding: 30px;
   border-radius: 10px;
 }
-.contact-area ul {
+.contact-lists {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -109,16 +130,21 @@
   align-items: center;
   flex-direction: column;
 }
-.contact-area ul li {
+.contact-item {
   width: 80%;
   height: 40px;
   margin: 10px 0;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #0d6efd;
   border-radius: 5px;
+  color: #0d6efd;
 }
-.contact-area ul li:hover {
+.contact-item a {
+  text-decoration: none;
+  padding: 0 auto;
+}
+.contact-item:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 .contact-area button {
   position: absolute;
@@ -126,6 +152,7 @@
   right: 2px;
   border: none;
   background-color: transparent;
+  color: #0d6efd;
 }
 .hot__sale {
   background-color: #0dcaf0;
@@ -139,8 +166,6 @@
   margin-left: 10px;
 }
 .hot__sale-animation {
-  font-weight: 700;
-  margin-left: 10px;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
 }

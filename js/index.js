@@ -12,7 +12,7 @@ function autoloop(a) {
     perPage: 5,
     type: "loop",
     perMove: 1,
-    interval: 2000,
+    interval: 4000,
     autoplay: true,
     breakpoints: {
       425: {
@@ -28,21 +28,58 @@ function autoloop(a) {
   });
   splide.mount();
 }
-
+// weekend hot sale animation
 const textAnimation = document.getElementById("textAnimation");
 let check = true;
 setInterval(() => {
   if (check) {
-    textAnimation.classList.remove("hot__sale-default");
     textAnimation.classList.add("hot__sale-animation");
     check = false;
   } else {
     textAnimation.classList.remove("hot__sale-animation");
-    textAnimation.classList.add("hot__sale-default");
     check = true;
   }
-}, 200);
+}, 500);
 
+// stop event function
+function stopPropagation(event) {
+  event.stopPropagation();
+}
+
+// open close menu
+function openMenu() {
+  const menuArea = document.getElementById("menu-area");
+  menuArea.style.display = "block";
+  subArea.style.position = "fixed";
+}
+function closeMenu() {
+  const menuArea = document.getElementById("menu-area");
+  menuArea.style.display = "none";
+  subArea.style.position = "absolute";
+}
+// sub area hover
+const subArea = document.getElementById("menu-sub-area");
+
+document.querySelectorAll(".menu-item").forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    subArea.style.display = "block";
+  });
+  item.addEventListener("mouseleave", () => {
+    subArea.style.display = "none";
+  });
+});
+document.querySelectorAll(".menu-sub-area").forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    item.style.display = "block";
+  });
+});
+
+document.querySelectorAll(".menu-sub-area").forEach((item) => {
+  item.addEventListener("mouseleave", () => {
+    item.style.display = "none";
+  });
+});
+// open close contact
 function openContact() {
   const contactArea = document.getElementById("contact-area");
   contactArea.classList.add("contact-center");
@@ -50,15 +87,4 @@ function openContact() {
 function closeContact() {
   const contactArea = document.getElementById("contact-area");
   contactArea.classList.remove("contact-center");
-}
-function stopPropagation(event) {
-  event.stopPropagation();
-}
-function openMenu() {
-  const menuArea = document.getElementById("menu-area");
-  menuArea.style.display = "block";
-}
-function closeMenu() {
-  const menuArea = document.getElementById("menu-area");
-  menuArea.style.display = "none";
 }

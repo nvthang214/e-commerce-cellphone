@@ -25,42 +25,49 @@
         <div class="header__top navbar">
           <!-- logo -->
           <a
-            href="index.html"
-            class="header__top-logo navbar-brand fs-1 fw-bold fst-italic text-white"
+            href="home.html"
+            target="_blank"
+            class="header__top-logo navbar-brand fs-1 fw-bold fst-italic text-white me-4"
           >
             Phone Universe
           </a>
-          <!-- product list -->
-          <div class="header_top-list">
-            <button class="btn fs-2 rounded-pill">
+          <!-- menu -->
+          <div class="header_top-menu">
+            <button class="btn fs-4 rounded-pill" onclick="openMenu()">
               <span><i class="fa-solid fa-list text-white"></i></span>
             </button>
           </div>
+
           <!-- search -->
-          <div class="header__top-search w-50 text-center">
+          <div class="header__top-search text-center">
             <form action="">
               <input
                 type="text"
-                class="w-75 border-0 fs-5"
+                class="w-100 border-0 fs-5"
                 placeholder="Search..."
               />
               <button><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
             </form>
           </div>
+          <!-- contact -->
           <div class="header__top-contact">
-            <button id="contact-btn" class="btn fs-2 rounded-pill">
-              <i class="fa-solid fa-phone text-white"></i>
+            <button
+              id="contact-btn"
+              onclick="openContact()"
+              class="btn fs-4 rounded-pill"
+            >
+              <i class="fa-solid fa-headset text-white"></i>
             </button>
           </div>
           <!-- search ship ID -->
           <div class="header__top-ship">
-            <a href="" class="btn fs-2 rounded-pill"
+            <a href="" class="btn fs-4 rounded-pill"
               ><i class="fa-solid fa-truck-fast text-white"></i
             ></a>
           </div>
           <!-- cart -->
           <div class="header__top-cart">
-            <a href="" class="btn fs-2 rounded-pill position-relative"
+            <a href="" class="btn fs-4 rounded-pill position-relative"
               ><i class="fa-solid fa-cart-shopping text-white"
                 ><span
                   class="position-absolute fs-5 sticky-top text-black-50"
@@ -72,21 +79,133 @@
           </div>
           <!-- user -->
           <div class="header__top-account">
-            <a href="" class="btn fs-2 rounded-pill"
+            <a href="" class="btn fs-4 rounded-pill"
               ><i class="fa-solid fa-user text-white"></i
             ></a>
           </div>
         </div>
       </div>
     </div>
-    <div id="contact-area" class="contact-area">
-      <div class="contact-content">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+    <!-- menu-area -->
+    <div class="menu-area" id="menu-area" onclick="closeMenu()">
+      <div class="menu-content" onclick="stopPropagation(event)">
+        <ul class="menu-lists list-unstyled">
+          <li class="menu-item" onclick="opens()">
+            <span>
+              <i class="fa-solid fa-mobile"></i>
+              <a href="">Phone</a>,
+              <a href="">Tablet</a>
+            </span>
+
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-laptop"></i>
+              <a href="">Laptop</a>
+            </span>
+
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span
+              ><i class="fa-solid fa-headphones"></i>
+              <a href="">Sound</a>
+            </span>
+
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-camera"></i>
+              <a href="">Smart Watch</a>,
+              <a href="">Camera</a>
+            </span>
+
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-house-signal"></i>
+              <a href="">House</a>
+            </span>
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-computer"></i>
+              <a href="">PC</a>,
+              <a href="">Screen</a>
+            </span>
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-tv"></i>
+              <a href="">TV</a>
+            </span>
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
+          <li class="menu-item">
+            <span>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <a href="">Second-Hand</a>
+            </span>
+            <span class="menu-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+          </li>
         </ul>
+      </div>
+    </div>
+
+    <!-- contact-area -->
+    <div id="contact-area" onclick="closeContact()" class="contact-area">
+      <div class="contact-content" onclick="stopPropagation(event)">
+        <ul class="contact-lists text-center">
+          <li class="contact-item">
+            <a href="tel:+84377591418"
+              ><span><i class="fa-solid fa-phone"></i></span>0377591418</a
+            >
+          </li>
+          <li class="contact-item">
+            <a href="mailto:nguyenvanthang520527@gmail.com"
+              ><span><i class="fa-solid fa-envelope"></i></span
+              >nguyenvanthang520527@gmail.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a
+              href="https://www.facebook.com/nguyenvanthang0201"
+              target="_blank"
+              ><span><i class="fa-brands fa-facebook"></i></span>Nguyen Van
+              Thang</a
+            >
+          </li>
+          <li class="contact-item">
+            <a href="https://www.instagram.com/_nvt_21/" target="_blank"
+              ><span><i class="fa-brands fa-instagram"></i></span>Nguyen Van
+              Thang</a
+            >
+          </li>
+        </ul>
+        <button onclick="closeContact()">
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </button>
       </div>
     </div>
 
@@ -96,26 +215,117 @@
       <div class="banner row">
         <!-- left -->
         <div class="banner__left col-3">
-          <a href="">
-            <img
-              src="./image/banner/vnpay.webp"
-              class="w-100 m-1 rounded"
-              alt=""
-            />
-          </a>
-          <a href="">
-            <img
-              src="./image/banner/theTinDung.webp"
-              class="w-100 m-1 rounded"
-              alt=""
-            />
-          </a>
-          <a href=""
-            ><img
-              src="./image/banner/momo.webp"
-              class="w-100 m-1 rounded"
-              alt=""
-          /></a>
+          <!-- menu-area -->
+          <div class="menu-content" onclick="stopPropagation(event)">
+            <ul class="menu-lists list-unstyled">
+              <li class="menu-item" onclick="opens()">
+                <span>
+                  <i class="fa-solid fa-mobile"></i>
+                  <a href="">Phone</a>,
+                  <a href="">Tablet</a>
+                </span>
+
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-laptop"></i>
+                  <a href="">Laptop</a>
+                </span>
+
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span
+                  ><i class="fa-solid fa-headphones"></i>
+                  <a href="">Sound</a>
+                </span>
+
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-camera"></i>
+                  <a href="">Smart Watch</a>,
+                  <a href="">Camera</a>
+                </span>
+
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-house-signal"></i>
+                  <a href="">House</a>
+                </span>
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-computer"></i>
+                  <a href="">PC</a>,
+                  <a href="">Screen</a>
+                </span>
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-tv"></i>
+                  <a href="">TV</a>
+                </span>
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+              <li class="menu-item">
+                <span>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <a href="">Second-Hand</a>
+                </span>
+                <span class="menu-arrow">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <!-- menu sub area -->
+          <div class="menu-sub-area" id="menu-sub-area">
+            <div class="area">
+              <ul>
+                <li><b>Brand Phone</b></li>
+                <li><a href="">Apple</a></li>
+                <li><a href="">iPhone </a></li>
+                <li><a href="">Samsung </a></li>
+                <li><a href="">Xiaomi </a></li>
+                <li><a href="">OPPO </a></li>
+                <li><a href="">Realme </a></li>
+                <li><a href="">Vivo </a></li>
+                <li><a href="">ASUS </a></li>
+                <li><a href="">Infinix </a></li>
+                <li><a href="">Nokia </a></li>
+              </ul>
+              <ul>
+                <li><b>Hot phone</b></li>
+              </ul>
+              <ul>
+                <li><b>Brand Tablet</b></li>
+              </ul>
+              <ul>
+                <li><b>Hot Tablet</b></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- slider -->
         <div class="banner__slide col-6 rounded-3">
