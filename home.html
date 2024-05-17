@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./image/favicon.png" type="image/x-icon" />
-    <title>Phone Universe | Nguyen Van Thang</title>
+    <title>UniverseS | Nguyen Van Thang</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,10 +26,9 @@
           <!-- logo -->
           <a
             href="home.html"
-            target="_blank"
             class="header__top-logo navbar-brand fs-1 fw-bold fst-italic text-white me-4"
           >
-            Phone Universe
+            UniverseS
           </a>
           <!-- menu -->
           <div class="header_top-menu">
@@ -90,7 +89,7 @@
     <div class="menu-area" id="menu-area" onclick="closeMenu()">
       <div class="menu-content" onclick="stopPropagation(event)">
         <ul class="menu-lists list-unstyled">
-          <li class="menu-item" onclick="opens()">
+          <li class="menu-item" data-="phone">
             <span>
               <i class="fa-solid fa-mobile"></i>
               <a href="">Phone</a>,
@@ -101,7 +100,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="laptop">
             <span>
               <i class="fa-solid fa-laptop"></i>
               <a href="">Laptop</a>
@@ -111,7 +110,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="sound">
             <span
               ><i class="fa-solid fa-headphones"></i>
               <a href="">Sound</a>
@@ -121,7 +120,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="watch">
             <span>
               <i class="fa-solid fa-camera"></i>
               <a href="">Smart Watch</a>,
@@ -132,7 +131,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="house">
             <span>
               <i class="fa-solid fa-house-signal"></i>
               <a href="">House</a>
@@ -141,7 +140,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="pc">
             <span>
               <i class="fa-solid fa-computer"></i>
               <a href="">PC</a>,
@@ -151,7 +150,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="tv">
             <span>
               <i class="fa-solid fa-tv"></i>
               <a href="">TV</a>
@@ -160,7 +159,7 @@
               <i class="fa-solid fa-angle-right"></i>
             </span>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-="old">
             <span>
               <i class="fa-solid fa-mobile-screen-button"></i>
               <a href="">Second-Hand</a>
@@ -178,29 +177,25 @@
       <div class="contact-content" onclick="stopPropagation(event)">
         <ul class="contact-lists text-center">
           <li class="contact-item">
-            <a href="tel:+84377591418"
-              ><span><i class="fa-solid fa-phone"></i></span>0377591418</a
+            <a href="tel:+84000000000"
+              ><span><i class="fa-solid fa-phone"></i></span>0000000000</a
             >
           </li>
           <li class="contact-item">
-            <a href="mailto:nguyenvanthang520527@gmail.com"
-              ><span><i class="fa-solid fa-envelope"></i></span
-              >nguyenvanthang520527@gmail.com</a
+            <a href="mailto:abc@gmail.com"
+              ><span><i class="fa-solid fa-envelope"></i></span>abc@gmail.com</a
             >
           </li>
           <li class="contact-item">
-            <a
-              href="https://www.facebook.com/nguyenvanthang0201"
-              target="_blank"
+            <a href="https://www.facebook.com" target="_blank"
               ><span><i class="fa-brands fa-facebook"></i></span>Nguyen Van
               Thang</a
             >
           </li>
           <li class="contact-item">
-            <a href="https://www.instagram.com/_nvt_21/" target="_blank"
-              ><span><i class="fa-brands fa-instagram"></i></span>Nguyen Van
-              Thang</a
-            >
+            <a href="https://www.instagram.com/" target="_blank"
+              ><span><i class="fa-brands fa-instagram"></i></span
+            ></a>
           </li>
         </ul>
         <button onclick="closeContact()">
@@ -215,10 +210,10 @@
       <div class="banner row">
         <!-- left -->
         <div class="banner__left col-3">
-          <!-- menu-area -->
+          <!-- menu -->
           <div class="menu-content" onclick="stopPropagation(event)">
             <ul class="menu-lists list-unstyled">
-              <li class="menu-item" onclick="opens()">
+              <li class="menu-item" data-="phone">
                 <span>
                   <i class="fa-solid fa-mobile"></i>
                   <a href="">Phone</a>,
@@ -229,7 +224,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="laptop">
                 <span>
                   <i class="fa-solid fa-laptop"></i>
                   <a href="">Laptop</a>
@@ -239,7 +234,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="sound">
                 <span
                   ><i class="fa-solid fa-headphones"></i>
                   <a href="">Sound</a>
@@ -249,7 +244,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="watch">
                 <span>
                   <i class="fa-solid fa-camera"></i>
                   <a href="">Smart Watch</a>,
@@ -260,7 +255,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="house">
                 <span>
                   <i class="fa-solid fa-house-signal"></i>
                   <a href="">House</a>
@@ -269,7 +264,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="pc">
                 <span>
                   <i class="fa-solid fa-computer"></i>
                   <a href="">PC</a>,
@@ -279,7 +274,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="tv">
                 <span>
                   <i class="fa-solid fa-tv"></i>
                   <a href="">TV</a>
@@ -288,7 +283,7 @@
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item" data-="old">
                 <span>
                   <i class="fa-solid fa-mobile-screen-button"></i>
                   <a href="">Second-Hand</a>
@@ -299,30 +294,20 @@
               </li>
             </ul>
           </div>
-          <!-- menu sub area -->
+          <!--menu details -->
           <div class="menu-sub-area" id="menu-sub-area">
             <div class="area">
-              <ul>
-                <li><b>Brand Phone</b></li>
-                <li><a href="">Apple</a></li>
-                <li><a href="">iPhone </a></li>
-                <li><a href="">Samsung </a></li>
-                <li><a href="">Xiaomi </a></li>
-                <li><a href="">OPPO </a></li>
-                <li><a href="">Realme </a></li>
-                <li><a href="">Vivo </a></li>
-                <li><a href="">ASUS </a></li>
-                <li><a href="">Infinix </a></li>
-                <li><a href="">Nokia </a></li>
+              <ul id="phone-list">
+                <p><b>Brand Phone</b></p>
               </ul>
               <ul>
-                <li><b>Hot phone</b></li>
+                <p><b>Hot phone</b></p>
               </ul>
               <ul>
-                <li><b>Brand Tablet</b></li>
+                <p><b>Brand Tablet</b></p>
               </ul>
               <ul>
-                <li><b>Hot Tablet</b></li>
+                <p><b>Hot Tablet</b></p>
               </ul>
             </div>
           </div>
@@ -1366,6 +1351,133 @@
       </div>
     </div>
     <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="row col-md-8 text-start">
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Introduce about the company</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Privacy Policy</a>
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Operating regulations</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Check electronic invoices</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Look up warranty information</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Purchasing FAQ</a>
+                </li>
+              </ul>
+              <div></div>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Recruitment</a>
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Promotion information</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Instructions for buying online</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Instructions for buying in installments</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Installment payment policy</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Collection policy and</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >processing of personal data</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Shop system</a>
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Return policy</a>
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none">Warranty system</a>
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >Introducing the exchange machine</a
+                  >
+                </li>
+                <li class="m-3">
+                  <a href="" class="text-decoration-none"
+                    >FPT mobile network policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 text-start">
+            <h4>Contact for sale</h4>
+            <h6 class="text-danger">(*)Sale 10%!</h6>
+            <p>(*)Voucher will be send in 24h</p>
+            <form action="" class="footer-form text-center">
+              <input
+                type="email"
+                class="w-100"
+                required
+                id="email"
+                placeholder="Email"
+              />
+
+              <input
+                type="tel"
+                class="w-100"
+                required
+                id="phoneNumber"
+                placeholder="Phone Number"
+              />
+              <input
+                type="submit"
+                value="Register now"
+                class="btn-outline-info btn footer__form--btn"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content">Copyright @2024 by Nguyen Van Thang</div>
+    </div>
 
     <!-- js -->
     <script
@@ -1373,6 +1485,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script src="./js/splide.js"></script>
     <script src="./js/index.js"></script>
   </body>

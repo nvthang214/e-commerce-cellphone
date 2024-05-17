@@ -62,9 +62,11 @@ const subArea = document.getElementById("menu-sub-area");
 
 document.querySelectorAll(".menu-item").forEach((item) => {
   item.addEventListener("mouseenter", () => {
+    console.log(item.getAttribute("data-") == "phone");
     subArea.style.display = "block";
   });
   item.addEventListener("mouseleave", () => {
+    item.classList.remove("item-active");
     subArea.style.display = "none";
   });
 });
@@ -88,3 +90,10 @@ function closeContact() {
   const contactArea = document.getElementById("contact-area");
   contactArea.classList.remove("contact-center");
 }
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    document.getElementById("wrapperTop").style.position = "fixed";
+  } else {
+    document.getElementById("wrapperTop").style.position = "static";
+  }
+});
